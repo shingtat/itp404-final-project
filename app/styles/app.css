@@ -1,0 +1,14 @@
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe{
+  width: 27%;
+}
+
+.recipe img {
+  width: 100%;
+  height: 300px;
+}

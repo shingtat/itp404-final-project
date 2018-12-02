@@ -1,0 +1,15 @@
+
+<div class = "flex">
+  {{#each model as |recipe|}}
+  <div class = "recipe">
+    <p>
+      Creator: {{recipe.creator}}
+    </p>
+    <img src = {{recipe.image}} />
+    <p>
+      Ingredients: {{recipe.ingredients}}
+    </p>
+  </div>
+  {{/each}}
+</div>
+{{outlet}}
