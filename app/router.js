@@ -11,6 +11,9 @@ Router.map(function() {
   this.route('recipe', {path: '/recipes/:id'});
   this.route('create', { path: '/recipes/new' });
   this.route('edit', { path: '/recipes/:id/edit' });
+  this.route('loading');
+  this.route('404');
+  this.route('error');
 });
 
 export default Router;
