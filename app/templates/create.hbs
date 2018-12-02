@@ -1,0 +1,24 @@
+<form onsubmit={{action "createRecipe"}} class = "create_form">
+    <p class = "spacing">Creator:</p>
+    {{input id="creator" type="text" value=creator}}
+
+    <p class = "spacing">Country:</p>
+    {{input id="country" type="text" value=country}}
+
+    <p class = "spacing" >Title:</p>
+    {{input id="title" type="text" value=title}}
+
+    <p class = "spacing" >Ingredients:</p>
+    {{textarea id="ingredients" rows="8" cols="80" value=ingredients}}
+
+    <p class = "spacing" >Steps:</p>
+    {{textarea id="steps" rows="8" cols="80" value=steps}}
+
+
+    <p class = "spacing" >Image URL:</p>
+    {{input id="image" type="text" value=image}}
+
+    <br />
+    <br />
+    <button data-test = "publish" type="submit">Publish</button>
+</form>

@@ -8,7 +8,9 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('recipe');
+  this.route('recipe', {path: '/recipes/:id'});
+  this.route('create', { path: '/recipes/new' });
+  this.route('edit', { path: '/recipes/:id/edit' });
 });
 
 export default Router;

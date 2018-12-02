@@ -16,8 +16,8 @@ export default function() {
 
     this.get('/recipes');
     this.post('/recipes');
-    this.get('/recipes/:title');
-    this.put('/recipes/:title'); // or this.patch
-    this.del('/recipes/:title');
+    this.get('/recipes/:id');
+    this.patch('/recipes/:id'); // or this.patch
+    this.del('/recipes/:id');
 
 }

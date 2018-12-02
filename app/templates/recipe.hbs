@@ -1,1 +1,32 @@
-{{outlet}}
+<img
+  data-test = "delete-recipe"
+  src = "/assets/images/trashcan.png"
+  alt = "trash"
+  class = "trash"
+  onclick={{action "deleteRecipe" model}}
+  role="button"
+>
+{{#link-to "edit" model}}
+<img
+  data-test = "edit-recipe"
+  src = "/assets/images/editicon.png"
+  alt = "trash"
+  class = "trash"
+  role="button"
+>
+{{/link-to}}
+
+<p data-test = "recipe-id"><strong>Recipe ID:</strong> {{model.id}}</p>
+<p data-test = "recipe-country"><strong>Country:</strong> {{model.country}}</p>
+<p data-test = "recipe-title"><strong>Title:</strong> {{model.title}}</p>
+
+<p data-test = "recipe-ingredients">
+  <strong>Ingredients:</strong> {{model.ingredients}}
+</p>
+<p data-test = "recipe-steps">
+  <strong>Steps:</strong> {{model.steps}}
+</p>
+
+<img
+  data-test = "recipe-steps" src = {{model.image}}
+>

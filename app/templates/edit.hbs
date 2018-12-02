@@ -1,0 +1,32 @@
+<form onsubmit={{action "editRecipe" model}} class = "edit_form">
+  <div>
+    <label class = "edit_label" for="creator">Creator</label>
+    {{input type="text" id="creator" value=model.creator}}
+  </div>
+  <div>
+    <label class = "edit_label"  for="country">Country</label>
+    {{input type="text" id="country" value=model.country}}
+  </div>
+  <div>
+    <label class = "edit_label" for="title">Title</label>
+    {{input type="text" id="title" value=model.title}}
+  </div>
+  <div>
+    <label class = "edit_label" for="image">Image</label>
+    {{input type="text" id="image" value=model.image}}
+  </div>
+
+  <img class = "edit_image" src = {{model.image}} />
+
+  <div>
+    <h3>Ingredients:</h3>
+    {{textarea rows="8" cols="80" value=model.ingredients}}
+  </div>
+  <div>
+    <h3>Steps:</h3>
+    {{textarea rows="8" cols="80" value=model.steps}}
+  </div>
+
+
+  <button type="submit">Publish</button>
+</form>
