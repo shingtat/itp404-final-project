@@ -1,3 +1,6 @@
+TRAVIS BADGE
+https://travis-ci.org/shingtat/itp404-final-project/builds/463205885
+
 # What problem are you trying to solve?
 * Planning to compile an ancient Chinese recipes list
 # Who is the primary audience?

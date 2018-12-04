@@ -19,7 +19,7 @@ verify that "liking" a recipe will show on "like" route
 viewing a single recipe (GET request)
   Verify that all of the recipe attributes were rendered.
 
-deleting a single email (Delete request)
+deleting a single recipe (Delete request)
    that when the trash icon is clicked, the number of recipes back on index page is 0 and the current URL is /.
 
 creating a recipe (Post request)
