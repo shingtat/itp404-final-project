@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('loading');
   this.route('404');
   this.route('error');
+  this.route('liked');
 });
 
 export default Router;

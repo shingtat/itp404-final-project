@@ -1,15 +1,10 @@
 <div class = "flex">
   {{#each model as |recipe|}}
-  <div class = "recipe">
-    <p>
-      Creator: {{recipe.creator}}
-    </p>
-    {{#link-to "recipe" recipe.id}}Click here for more information!{{/link-to}}
-    <img src = {{recipe.image}} />
-    <p>
-      Ingredients: {{recipe.ingredients}}
-    </p>
-  </div>
+    <LikeButton
+      @like={{recipe.like}}
+      @onClick={{action "liked" recipe}}
+    />
+    <SingleRecipe @recipe={{recipe}} />
   {{/each}}
 </div>
 {{outlet}}

@@ -18,5 +18,8 @@ export default Factory.extend({
   },
   image(){
     return faker.image.food();
+  },
+  like(){
+    return false;
   }
 });

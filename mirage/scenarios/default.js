@@ -9,7 +9,8 @@ export default function( server ) {
       country: 'Vietnam',
       title: 'Chicken Pho',
       ingredients: 'Egg, Noodles, Cilantro, Onion',
-      image: '/assets/images/pho.jpg'
+      image: '/assets/images/pho.jpg',
+      like: 'false'
    });
 
    server.create('recipe',{
@@ -17,7 +18,8 @@ export default function( server ) {
       country: 'Vietnam',
       title: 'Pork Bahnmi',
       ingredients: 'Pork, Bun, Cilantro, Carrots, Onion',
-      image: '/assets/images/bahnmi.jpg'
+      image: '/assets/images/bahnmi.jpg',
+      like: 'false'
    });
 
    server.create('recipe',{
@@ -25,7 +27,8 @@ export default function( server ) {
       country: 'Beijing',
       title: 'Peking Duck',
       ingredients: 'Duck, Flour, Hoisin Sauce, Onion',
-      image: '/assets/images/pekingduck.jpeg'
+      image: '/assets/images/pekingduck.jpeg',
+      like: 'false'
    });
    server.createList('recipe', 10);
 }

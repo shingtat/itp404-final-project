@@ -1,24 +1,50 @@
 <form onsubmit={{action "createRecipe"}} class = "create_form">
-    <p class = "spacing">Creator:</p>
-    {{input id="creator" type="text" value=creator}}
+  <p class = "spacing">Creator:</p>
+  {{input id="creator" type="text" value=creator}}
+  {{#each this.errors.creator as |error|}}
+    <span>{{error.message}}</span>
+  {{/each}}
 
-    <p class = "spacing">Country:</p>
-    {{input id="country" type="text" value=country}}
+  <p class = "spacing">Country:</p>
+  {{input id="country" type="text" value=country}}
+  {{#each this.errors.country as |error|}}
+    <span>{{error.message}}</span>
+  {{/each}}
 
+  <div class = "form-group">
     <p class = "spacing" >Title:</p>
     {{input id="title" type="text" value=title}}
+    {{#each this.errors.title as |error|}}
+      <span>{{error.message}}</span>
+    {{/each}}
+  </div>
 
-    <p class = "spacing" >Ingredients:</p>
-    {{textarea id="ingredients" rows="8" cols="80" value=ingredients}}
+  <p class = "spacing" >Ingredients:</p>
+  {{textarea id="ingredients" rows="8" cols="80" value=ingredients}}
+  {{#each this.errors.ingredients as |error|}}
+    <span>{{error.message}}</span>
+  {{/each}}
 
-    <p class = "spacing" >Steps:</p>
-    {{textarea id="steps" rows="8" cols="80" value=steps}}
+  <p class = "spacing" >Steps:</p>
+  {{textarea id="steps" rows="8" cols="80" value=steps}}
+  {{#each this.errors.steps as |error|}}
+    <span>{{error.message}}</span>
+  {{/each}}
 
 
-    <p class = "spacing" >Image URL:</p>
-    {{input id="image" type="text" value=image}}
+  <p class = "spacing" >Image URL:</p>
+  {{input id="image" type="text" value=image}}
+  {{#each this.errors.image as |error|}}
+    <span>{{error.message}}</span>
+  {{/each}}
 
-    <br />
-    <br />
-    <button data-test = "publish" type="submit">Publish</button>
+  <br>
+  <br>
+  <button data-test = "publish" type="submit">
+    {{#if this.saving}}
+      Saving
+    {{else}}
+      Save
+    {{/if}}
+  </button>
 </form>

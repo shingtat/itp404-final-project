@@ -1,0 +1,8 @@
+<div class = "flex">
+  {{#each model as |recipe|}}
+    {{#if recipe.like}}
+      <SingleRecipe @recipe={{recipe}} />
+    {{/if}}
+  {{/each}}
+</div>
+{{outlet}}

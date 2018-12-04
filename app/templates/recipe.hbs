@@ -7,13 +7,13 @@
   role="button"
 >
 {{#link-to "edit" model}}
-<img
-  data-test = "edit-recipe"
-  src = "/assets/images/editicon.png"
-  alt = "trash"
-  class = "trash"
-  role="button"
->
+  <img
+    data-test = "edit-recipe"
+    src = "/assets/images/editicon.png"
+    alt = "trash"
+    class = "trash"
+    role="button"
+  >
 {{/link-to}}
 
 <p data-test = "recipe-id"><strong>Recipe ID:</strong> {{model.id}}</p>
@@ -28,5 +28,7 @@
 </p>
 
 <img
-  data-test = "recipe-steps" src = {{model.image}}
+  data-test = "recipe-image"
+  src = {{model.image}}
+  alt = "recipe-image"
 >
