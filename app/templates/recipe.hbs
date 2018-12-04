@@ -21,7 +21,8 @@
 <p data-test = "recipe-title"><strong>Title:</strong> {{model.title}}</p>
 
 <p data-test = "recipe-ingredients">
-  <strong>Ingredients:</strong> {{model.ingredients}}
+  <strong>Ingredients:</strong>
+  {{parse-ingredients model.ingredients }}
 </p>
 <p data-test = "recipe-steps">
   <strong>Steps:</strong> {{model.steps}}
